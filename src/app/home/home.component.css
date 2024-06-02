@@ -11,14 +11,21 @@
 header {
     width: 100%;
     height: 250px;
-    background-image: url("/assets/bitmapp.png");
     background-repeat: no-repeat;
     background-position-x: -518px;
     background-position-y: -310px;
     position: relative;
 }
+header img {
+  object-fit:cover;
+  position: absolute;
+  top: 0px;
+  width: 100%;
+  height: 100%;
+}
 .overlay {
-    background: linear-gradient(90deg, rgba(147, 121, 193, 0.656) 0%, rgba(99,77,200,0.73) 100%);
+    background: linear-gradient(90deg, rgba(172,45,235,1) 0%, rgba(85,150,255,1) 100%);
+    opacity: 80%;
     position: absolute;
     top: 0;
     width: 100%;
@@ -52,6 +59,7 @@ header {
     gap: 15px;
     border-radius: 5px;
     margin-top: 40px;
+    width: 100%;
 }
 .separate {
   display: flex;
@@ -168,6 +176,7 @@ header {
 }
 
 .list-info {
+  width: 100%;
     padding: 20px 16px;
     display: flex;
     justify-content: space-between;
